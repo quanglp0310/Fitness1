@@ -1,7 +1,9 @@
 import 'package:fitness2/common/colo_extension.dart';
 import 'package:fitness2/main_tab/main_tab_view.dart';
+import 'package:fitness2/view/home/finished_workout_view.dart';
 import 'package:fitness2/view/home/home_view.dart';
 import 'package:fitness2/view/on_boarding/started_view.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         primaryColor: TColor.primaryColor1,
         fontFamily: "Poppins",
       ),
-      home: const StartedView(),
+      home: const FinishedWorkoutView(),
     );
   }
 }
