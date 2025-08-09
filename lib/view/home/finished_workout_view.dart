@@ -1,10 +1,11 @@
+ 
 import 'package:fitness2/common/colo_extension.dart';
 import 'package:fitness2/common_widget/round_button.dart';
 import 'package:fitness2/main_tab/main_tab_view.dart';
 import 'package:fitness2/view/home/home_view.dart';
 import 'package:fitness2/view/login/login_view.dart';
 import 'package:flutter/material.dart';
-
+ 
 class FinishedWorkoutView extends StatefulWidget {
   const FinishedWorkoutView({super.key});
 
@@ -16,55 +17,62 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
+ 
+
     return Scaffold(
-      backgroundColor: TColor.white,
       body: SafeArea(
-        child: Container(
-          width: media.width,
-          padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(height: media.width * 0.1),
+              const SizedBox(height: 20),
               Image.asset(
                 "assets/img/complete_workout.png",
-                width: media.width * 0.75,
-                fit: BoxFit.fitWidth,
+                height: media.width * 0.8,
+                fit: BoxFit.fitHeight,
               ),
-              SizedBox(height: media.width * 0.1),
+
+              const SizedBox(height: 20),
+
               Text(
-                "Congratulations, You Have\nFinished Your Workout",
+                "Congratulations, You Have Finished Your Workout",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: TColor.gray,
+                  color: TColor.black,
+ 
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              SizedBox(height: media.width * 0.03),
+ 
+
+              const SizedBox(height: 20),
+
               Text(
-                "Exercises is king and nutrition is queen. Combine the\ntwo and you will have a kingdom",
+                "Exercises is king and nutrition is queen. Combine the two and you will have a kingdom",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: TColor.gray, fontSize: 12),
               ),
+
+              const SizedBox(height: 8),
+ 
               Text(
                 "-Jack Lalanne",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: TColor.gray, fontSize: 12),
               ),
+ 
               const Spacer(),
               RoundButton(
                 title: "Back To Home",
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MainTabView(),
-                    ),
-                  );
+ 
+                  Navigator.pop(context);
                 },
               ),
+
+ 
             ],
           ),
         ),

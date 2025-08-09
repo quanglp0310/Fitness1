@@ -1,16 +1,17 @@
 import 'package:fitness2/common/colo_extension.dart';
+import 'package:fitness2/common/colo_extension.dart';
 import 'package:flutter/material.dart';
 
 class TabButton extends StatelessWidget {
   final String icon;
   final String selectIcon;
-  final VoidCallback onTap;
   final bool isActive;
+  final VoidCallback onTap;
+
   const TabButton({
     super.key,
     required this.icon,
     required this.selectIcon,
-
     required this.isActive,
     required this.onTap,
   });
@@ -34,7 +35,7 @@ class TabButton extends StatelessWidget {
               width: 4,
               height: 4,
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: TColor.secondaryG),
+                gradient: LinearGradient(colors: TColor.primaryG),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
