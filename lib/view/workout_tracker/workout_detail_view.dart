@@ -4,6 +4,8 @@ import 'package:fitness2/common_widget/icon_title_next_row.dart';
 import 'package:fitness2/common_widget/round_button.dart';
 import 'package:fitness2/common_widget/upcoming_workout_row.dart';
 import 'package:fitness2/common_widget/what_train_row.dart';
+import 'package:fitness2/view/workout_tracker/exercises_stpe_details.dart';
+import 'package:fitness2/view/workout_tracker/workout_schedule_view.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -237,12 +239,12 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                         time: "5/27, 09:00 AM",
                         color: TColor.primaryColor2.withOpacity(0.3),
                         onPressed: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //     builder: (context) => const WorkoutScheduleView(),
-                          //   ),
-                          // );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const WorkoutScheduleView(),
+                            ),
+                          );
                         },
                       ),
                       SizedBox(height: media.width * 0.02),
@@ -356,13 +358,13 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                           return ExercisesSetSection(
                             sObj: sObj,
                             onPressed: (obj) {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //     builder: (context) =>
-                              //         ExercisesStepDetails(eObj: obj),
-                              //   ),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      ExercisesStepDetails(eObj: obj),
+                                ),
+                              );
                             },
                           );
                         },
