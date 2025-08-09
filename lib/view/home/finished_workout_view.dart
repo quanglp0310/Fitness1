@@ -1,8 +1,11 @@
+ 
+import 'package:fitness2/common/colo_extension.dart';
+import 'package:fitness2/common_widget/round_button.dart';
+import 'package:fitness2/main_tab/main_tab_view.dart';
+import 'package:fitness2/view/home/home_view.dart';
+import 'package:fitness2/view/login/login_view.dart';
 import 'package:flutter/material.dart';
-
-import '../../common/colo_extension.dart';
-import '../../common_widget/round_button.dart';
-
+ 
 class FinishedWorkoutView extends StatefulWidget {
   const FinishedWorkoutView({super.key});
 
@@ -14,6 +17,7 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
+ 
 
     return Scaffold(
       body: SafeArea(
@@ -36,10 +40,12 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: TColor.black,
+ 
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
+ 
 
               const SizedBox(height: 20),
 
@@ -50,22 +56,23 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
               ),
 
               const SizedBox(height: 8),
-
+ 
               Text(
                 "-Jack Lalanne",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: TColor.gray, fontSize: 12),
               ),
-
+ 
               const Spacer(),
               RoundButton(
                 title: "Back To Home",
                 onPressed: () {
+ 
                   Navigator.pop(context);
                 },
               ),
 
-              const SizedBox(height: 8),
+ 
             ],
           ),
         ),
