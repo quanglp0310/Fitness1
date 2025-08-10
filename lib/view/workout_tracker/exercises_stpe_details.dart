@@ -283,6 +283,4 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
       ),
     );
   }
-
- 
 }

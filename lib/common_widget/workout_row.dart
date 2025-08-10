@@ -66,12 +66,10 @@ class WorkoutRow extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: Image.asset(
-              "assets/img/more_btn.png",
-              width: 25,
-              height: 25,
-              errorBuilder: (context, error, stackTrace) {
-                return Icon(Icons.more_horiz, color: TColor.gray);
-              },
+              "assets/img/next_icon.png",
+              width: 30,
+              height: 30,
+              fit: BoxFit.contain,
             ),
           ),
         ],

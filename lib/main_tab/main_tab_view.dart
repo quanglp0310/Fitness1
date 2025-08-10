@@ -1,3 +1,4 @@
+import 'package:fitness2/view/workout_tracker/workout_tracker_view.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness2/common/colo_extension.dart';
 import 'package:fitness2/common_widget/tab_button.dart';
@@ -100,7 +101,7 @@ class _MainTabViewState extends State<MainTabView> {
                 icon: "assets/img/activity_tab.png",
                 selectIcon: "assets/img/activity_tab_select.png",
                 isActive: selectTab == 1,
-                onTap: () => changeTab(1, const NotificationView()),
+                onTap: () => changeTab(1, const WorkoutTrackerView()),
               ),
               const SizedBox(width: 40), // Chừa chỗ cho nút FAB ở giữa
               // Tab Camera (thực tế gọi ActivityTrackerView)
