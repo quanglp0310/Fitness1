@@ -239,7 +239,6 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                   BarChartData(
                     barTouchData: BarTouchData(
                       touchTooltipData: BarTouchTooltipData(
-                        tooltipBgColor: Colors.grey,
                         tooltipHorizontalAlignment: FLHorizontalAlignment.right,
                         tooltipMargin: 10,
                         getTooltipItem: (group, groupIndex, rod, rodIndex) {
@@ -404,7 +403,7 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
         text = Text('', style: style);
         break;
     }
-    return SideTitleWidget(axisSide: meta.axisSide, space: 16, child: text);
+    return SideTitleWidget(meta: meta, space: 16, child: text);
   }
 
   List<BarChartGroupData> showingGroups() => List.generate(7, (i) {

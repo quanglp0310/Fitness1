@@ -5,10 +5,10 @@ packages:
     dependency: "direct main"
     description:
       name: animated_toggle_switch
-      sha256: "3c6d98dcd53cb93253a9418b888b3fcd9452a55fe1a7a390bd48c0a410a41634"
+      sha256: "31ba41bb2b13b1324da8370bda934cd569e77d42ce5950cf1d31707b6061a0d0"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.2"
+    version: "0.8.5"
   async:
     dependency: transitive
     description:
@@ -72,7 +72,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
- 
   dotted_dashed_line:
     dependency: "direct main"
     description:
@@ -81,7 +80,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.0.3"
- 
+  dotted_line:
+    dependency: "direct main"
+    description:
+      name: dotted_line
+      sha256: "41e3d655939559815daa1370fc1e07673a205fa628cf40ce3af45d90029a77b6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.3"
   equatable:
     dependency: transitive
     description:
@@ -102,10 +108,10 @@ packages:
     dependency: "direct main"
     description:
       name: fl_chart
-      sha256: c1e26c7e48496be85104c16c040950b0436674cdf0737f3f6e95511b2529b592
+      sha256: "577aeac8ca414c25333334d7c4bb246775234c0e44b38b10a82b559dd4d764e7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.63.0"
+    version: "1.0.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -124,13 +130,19 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
- 
   flutter_web_plugins:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
- 
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      sha256: "3df61194eb431efc39c4ceba583b95633a403f46c9fd341e550ce0bfa50e9aa5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.20.2"
   leak_tracker:
     dependency: transitive
     description:
@@ -195,7 +207,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
- 
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -204,6 +215,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
+  readmore:
+    dependency: "direct main"
+    description:
+      name: readmore
+      sha256: e8fca2bd397b86342483b409e2ec26f06560a5963aceaa39b27f30722b506187
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
+  scrollable_positioned_list:
+    dependency: transitive
+    description:
+      name: scrollable_positioned_list
+      sha256: "1b54d5f1329a1e263269abc9e2543d90806131aa14fe7c6062a8054d57249287"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.8"
   simple_animation_progress_bar:
     dependency: "direct main"
     description:
@@ -220,7 +247,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
- 
   sky_engine:
     dependency: transitive
     description: flutter
@@ -292,4 +318,4 @@ packages:
     version: "15.0.0"
 sdks:
   dart: ">=3.8.1 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.27.4"
