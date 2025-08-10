@@ -48,7 +48,7 @@ class IconTitleNextRow extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: 120,
+              width: 150,
               child: Text(
                 time,
                 textAlign: TextAlign.right,
