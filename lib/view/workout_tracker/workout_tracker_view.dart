@@ -63,20 +63,21 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
               elevation: 0,
               // pinned: true,
               leading: InkWell(
+                // Nút quay lại
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.pop(context); // Quay lại màn trước
                 },
                 child: Container(
-                  margin: const EdgeInsets.all(8),
+                  margin: const EdgeInsets.all(8), // Khoảng cách viền
                   height: 40,
                   width: 40,
-                  alignment: Alignment.center,
+                  alignment: Alignment.center, // Căn giữa icon
                   decoration: BoxDecoration(
                     color: TColor.lightGray,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Image.asset(
-                    "assets/img/black_btn.png",
+                    "assets/img/black_btn.png", // Icon mũi tên
                     width: 15,
                     height: 15,
                     fit: BoxFit.contain,
