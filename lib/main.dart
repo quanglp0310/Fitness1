@@ -4,6 +4,7 @@ import 'package:fitness2/view/home/finished_workout_view.dart';
 import 'package:fitness2/view/home/home_view.dart';
 import 'package:fitness2/view/on_boarding/on_boarding_view.dart';
 import 'package:fitness2/view/on_boarding/started_view.dart';
+import 'package:fitness2/view/sleep_tracker/sleep_tracker_view.dart';
 import 'package:fitness2/view/workout_tracker/workout_detail_view.dart';
 import 'package:fitness2/view/workout_tracker/workout_tracker_view.dart';
 
