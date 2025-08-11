@@ -278,7 +278,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                           ),
                         ),
                         SizedBox(
-                          width: 70,
+                          width: 80,
                           height: 25,
                           child: RoundButton(
                             title: "Check",

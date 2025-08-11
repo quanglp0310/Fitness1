@@ -1,4 +1,3 @@
-
 import 'package:fitness2/common/colo_extension.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +30,7 @@ class RoundTextfield extends StatelessWidget {
       ),
       child: TextField(
         controller: controller,
-        keyboardType: TextInputType.none,
+        keyboardType: keyboardType,
         obscureText: obscureText,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(
