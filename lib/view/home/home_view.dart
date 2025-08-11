@@ -264,7 +264,7 @@ class _HomeViewState extends State<HomeView> {
                         ),
                       ),
                       SizedBox(
-                        width: 70,
+                        width: 80,
                         height: 25,
                         child: RoundButton(
                           title: "Check",

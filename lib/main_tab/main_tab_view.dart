@@ -46,18 +46,12 @@ class _MainTabViewState extends State<MainTabView> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
-          decoration: BoxDecoration(
-            color: TColor.white,
-            boxShadow: const [
-              BoxShadow(
-                color: Colors.black12,
-                blurRadius: 2,
-                offset: Offset(0, -2),
-              ),
-            ],
-          ),
-          height: kToolbarHeight,
+        color: TColor.white, // 🔹 Màu nền đồng nhất
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 8,
+        elevation: 2, // 🔹 Thay boxShadow bằng elevation cho gọn
+        child: SizedBox(
+          height: 50.0, // 🔹 Có thể giảm chiều cao nếu muốn
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -68,26 +62,19 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   selectTab = 0;
                   currentTab = const HomeView();
-                  if (mounted) {
-                    setState(() {});
-                  }
+                  setState(() {});
                 },
               ),
               TabButton(
                 icon: "assets/img/activity_tab.png",
                 selectIcon: "assets/img/activity_tab_select.png",
                 isActive: selectTab == 1,
-
                 onTap: () {
-                  print("Activity tab tapped");
                   selectTab = 1;
                   currentTab = const SelectView();
-                  if (mounted) {
-                    setState(() {});
-                  }
+                  setState(() {});
                 },
               ),
-
               const SizedBox(width: 40),
               TabButton(
                 icon: "assets/img/camera_tab.png",
@@ -95,11 +82,8 @@ class _MainTabViewState extends State<MainTabView> {
                 isActive: selectTab == 2,
                 onTap: () {
                   selectTab = 2;
-                  print("Photo tab tapped");
                   currentTab = const PhotoProgressView();
-                  if (mounted) {
-                    setState(() {});
-                  }
+                  setState(() {});
                 },
               ),
               TabButton(
@@ -109,9 +93,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   selectTab = 3;
                   currentTab = const ProfileView();
-                  if (mounted) {
-                    setState(() {});
-                  }
+                  setState(() {});
                 },
               ),
             ],

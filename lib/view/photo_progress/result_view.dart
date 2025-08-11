@@ -384,6 +384,7 @@ class _ResultViewState extends State<ResultView> {
                         );
                       },
                     ),
+                    const SizedBox(height: 15),
                     RoundButton(
                       title: "Back to Home",
                       onPressed: () {
@@ -599,6 +600,7 @@ class _ResultViewState extends State<ResultView> {
                         );
                       },
                     ),
+                    const SizedBox(height: 20),
 
                     RoundButton(
                       title: "Back to Home",
