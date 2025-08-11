@@ -28,9 +28,9 @@ class _WorkoutScheduleViewsState extends State<WorkoutScheduleView> {
     {"name": "Ab Workout", "start_time": "09/08/2025 07:30 AM"},
     {"name": "Upperbody Workout", "start_time": "09/08/2025 09:00 AM"},
     {"name": "Lowerbody Workout", "start_time": "09/08/2025 03:00 PM"},
-    {"name": "Ab Workout", "start_time": "10/08/2025 07:30 AM"},
-    {"name": "Upperbody Workout", "start_time": "10/08/2025 09:00 AM"},
-    {"name": "Lowerbody Workout", "start_time": "10/08/2025 03:00 PM"},
+    {"name": "Ab Workout", "start_time": "11/08/2025 07:30 AM"},
+    {"name": "Upperbody Workout", "start_time": "11/08/2025 09:00 AM"},
+    {"name": "Lowerbody Workout", "start_time": "11/08/2025 03:00 PM"},
   ];
 
   List selectDayEventArr = [];
@@ -149,7 +149,7 @@ class _WorkoutScheduleViewsState extends State<WorkoutScheduleView> {
               onPressed: () {},
             ),
             weekDay: WeekDay.long,
-            dayNameFontSize: 12,
+            dayNameFontSize: 10,
             dayNumberFontSize: 16,
             dayBGColor: Colors.grey.withOpacity(0.15),
             titleSpaceBetween: 15,
